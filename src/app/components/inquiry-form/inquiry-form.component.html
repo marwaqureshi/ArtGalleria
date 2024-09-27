@@ -1,0 +1,29 @@
+<h2>Inquiry Form</h2>
+<form (ngSubmit)="submitInquiry()">
+  <div>
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" [(ngModel)]="firstName" name="firstName" required>
+  </div>
+
+  <div>
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" [(ngModel)]="lastName" name="lastName" required>
+  </div>
+
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" [(ngModel)]="email" name="email" required>
+  </div>
+
+  <div>
+    <label for="artName">Art Name:</label>
+    <input type="text" id="artName" [(ngModel)]="artName" name="artName" required>
+  </div>
+
+  <div>
+    <label for="inquiry">Your Inquiry:</label>
+    <textarea id="inquiry" [(ngModel)]="inquiry" name="inquiry" required></textarea>
+  </div>
+
+  <button type="submit">Submit Inquiry</button>
+</form>

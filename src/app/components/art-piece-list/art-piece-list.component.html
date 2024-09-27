@@ -1,0 +1,8 @@
+<h2>Art Pieces</h2>
+<div class="art-piece-list">
+    <ul>
+        <li *ngFor="let artPiece of artPieces" class="art-piece-card">
+            <a [routerLink]="['/art-piece', artPiece.id]" class="art-piece-link">{{ artPiece.name }}</a>
+        </li>
+    </ul>
+</div>

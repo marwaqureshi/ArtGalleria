@@ -1,0 +1,63 @@
+.admin-dashboard {
+    padding: 20px;
+  }
+  
+  .art-piece-form {
+    margin-bottom: 20px;
+  }
+  
+  .art-piece-form label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  .art-piece-form input,
+  .art-piece-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .art-piece-form button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .art-piece-form button:disabled {
+    background-color: #ccc; /* Gray */
+    cursor: not-allowed;
+  }
+  
+  h3 {
+    margin-top: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 5px 0;
+  }
+  
+  button {
+    background-color: red; /* Red for delete */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: darkred;
+  }

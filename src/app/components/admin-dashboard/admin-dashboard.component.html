@@ -1,0 +1,39 @@
+<div class="admin-dashboard">
+    <h2>Admin Dashboard</h2>
+  
+    <div class="art-piece-form">
+      <h3>Add New Art Piece</h3>
+      <form (ngSubmit)="addArtPiece()" #artPieceForm="ngForm">
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" [(ngModel)]="newArtPiece.name" name="name" required>
+        </div>
+        <div>
+          <label for="description">Description:</label>
+          <textarea id="description" [(ngModel)]="newArtPiece.description" name="description" required></textarea>
+        </div>
+        <div>
+          <label for="category">Category:</label>
+          <input type="text" id="category" [(ngModel)]="newArtPiece.category" name="category" required>
+        </div>
+        <div>
+          <label for="medium">Medium:</label>
+          <input type="text" id="medium" [(ngModel)]="newArtPiece.medium" name="medium" required>
+        </div>
+        <div>
+          <label for="imageUrl">Image URL:</label>
+          <input type="text" id="imageUrl" [(ngModel)]="newArtPiece.imageUrl" name="imageUrl" required>
+        </div>
+        <button type="submit" [disabled]="artPieceForm.invalid">Add Art Piece</button>
+      </form>
+    </div>
+  
+    <h3>Existing Art Pieces</h3>
+    <ul>
+      <li *ngFor="let artPiece of artPieces">
+        <h4>{{ artPiece.name }}</h4>
+        <p>{{ artPiece.description }}</p>
+        <button (click)="deleteArtPiece(artPiece.id)">Delete</button>
+      </li>
+    </ul>
+  </div>

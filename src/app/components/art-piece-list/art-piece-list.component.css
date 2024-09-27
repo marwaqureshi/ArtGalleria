@@ -1,0 +1,45 @@
+
+/* Container for the art piece list */
+.art-piece-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* Individual art piece card */
+.art-piece-card {
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    margin: 10px; 
+    padding: 15px;
+    width: 250px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s;
+}
+
+/* Hover effect for art piece cards */
+.art-piece-card:hover {
+    transform: scale(1.05); 
+}
+
+/* Title for the art piece */
+.art-piece-title {
+    font-size: 18px; 
+    font-weight: bold; 
+    margin-bottom: 10px; 
+}
+
+/* Description of the art piece */
+.art-piece-description {
+    font-size: 14px; 
+    color: #555; 
+    margin-bottom: 15px; 
+}
+
+/* Image styling */
+.art-piece-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px; 
+}
